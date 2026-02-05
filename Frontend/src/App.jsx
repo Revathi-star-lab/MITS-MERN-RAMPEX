@@ -18,6 +18,7 @@ import Hook from './Hooks/Hook'
 
 import Login from './Auth/Login'
 import Signedup from './Auth/Signedup'
+import Todo from './component/Todo'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signedup" element={<Signedup />} />
+        <Route path="/todo" element={<Todo/>}/>
 
         {/* NESTED ROUTES */}
         <Route path="/hook" element={<Hook />}>
