@@ -43,7 +43,7 @@ exports.updateTodo=async(req,res)=> {
     // todo.task=req.body.task || todo.task;
     // todo.completed=req.body.completed===undefined?todo.completed:req.body.completed
     // await todo.save();
-    const todo=await Todo.findByIdAndUpdate(req.paramas.id,req.body,{new:true})
+    const todo=await Todo.findByIdAndUpdate(req.params.id,req.body,{new:true})
     res.status(200).json(todo)
    }catch(err){
     res.status(500).send(err);
